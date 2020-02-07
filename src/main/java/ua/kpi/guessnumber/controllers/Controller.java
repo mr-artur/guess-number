@@ -17,15 +17,19 @@ public class Controller {
 
     public void startGame() {
         view.printMessage(View.WELCOME_MESSAGE);
+        int guessedNumber = guessNumber();
+        view.printGuessedNumber(guessedNumber);
+        view.printAllAnswers(model.getAnswers());
+    }
+
+    private int guessNumber() {
         Scanner scanner = new Scanner(System.in);
         int answer;
         do {
             answer = inputIntValue(scanner);
             tryToGuess(answer);
         } while (!model.isAnswerCorrect());
-
-        view.printGuessedAnswer(answer);
-        view.printAllAnswers(model.getAnswers());
+        return answer;
     }
 
     private int inputIntValue(Scanner scanner) {

@@ -6,7 +6,7 @@ import java.util.List;
 public class Model {
 
     private final int correctAnswer;
-    private List<Integer> answers = new ArrayList<>();
+    private final List<Integer> answers = new ArrayList<>();
     private int bottomLimit;
     private int topLimit;
 

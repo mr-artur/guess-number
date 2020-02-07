@@ -18,8 +18,8 @@ public class View {
         printMessage(String.format("Current limits: [%d...%d]", bottom, top));
     }
 
-    public void printGuessedAnswer(int answer) {
-        printMessage(String.format("Congratulations! Correct answer was: %d", answer));
+    public void printGuessedNumber(int number) {
+        printMessage(String.format("Congratulations! Correct answer was: %d", number));
     }
 
     public void printAllAnswers(List<Integer> answers) {
