@@ -5,7 +5,7 @@ import java.util.StringJoiner;
 
 public class View {
 
-    public static final String WELCOME_MESSAGE = "Try to guess a number! Number is between 1 and 100";
+    public static final String WELCOME_MESSAGE = "Try to guess a number! Number is between 0 and 100";
     public static final String OUT_OF_LIMITS_MESSAGE = "Number is out of limits!";
     public static final String INPUT_NUMBER = "Please, enter a number : ";
     public static final String WRONG_INPUT = "Please, enter an integer number within the specified limits!";
